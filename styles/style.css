@@ -1,0 +1,36 @@
+/* Raleway font style */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/*  <uniquifier>: Use a uniquifier for the class name
+    <weight>: Use a value from 100 to 900 */
+
+/* common styles */
+.font-raleway {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.button-one {
+    padding: 12px 30px;
+    border: 1px solid #1DD100;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1DD100;
+    background-color: #1DD10020;
+}
+
+.button-two {
+    padding: 12px 30px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #1DD100;
+}
+
+.banner-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

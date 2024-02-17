@@ -8,11 +8,63 @@
     <!-- Daisy UI Link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CSS stylesheet link -->
+    <link rel="stylesheet" href="styles/style.css">
 
 </head>
 
-<body>
-    <h1>Afroza Smart Ticketing</h1>
+<body class="font-raleway w-full justify-center ">
+    <header class="px-24">
+        <div class="header relative flex flex-col justify-center">
+            <nav class="flex justify-between items-center py-10">
+                <h2 class="text-3xl font-bold">Afroza Express</h2>
+                <div>
+                    <ul class="flex justify-between gap-12 text-xl">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Destinations</li>
+                        <li>Search</li>
+                    </ul>
+                </div>
+                <Button class="button-one flex gap-2 items-center">Bus<img src="images/bus-icon.png" alt=""></Button>
+            </nav>
+            <div class="banner-bg flex flex-col justify-center items-center py-40 gap-8 rounded-[34px] text-white">
+                <h1 class="text-6xl text-white font-bold">End-to-End Travel With</h1>
+                <h1 class="text-7xl  text-[#1DD100] font-extrabold">Afroza Express</h1>
+                <p>Book coach travel to 100's of UK towns, cities and airports with Afroza Express coaches.</p>
+                <button class="button-two text-black">Buy Tickets</button>
+            </div>
+        </div>
+        <div class="header-drop mt-[-60px] absolute flex justify-center items-center gap-8">
+            <div class="users p-8 flex items-center gap-4 border-b-4 bg-white border-[#1DD100] rounded-3xl">
+                <div>
+                    <img src="images/people.png" alt="">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-extrabold">500K+</h2>
+                    <p>Registered users</p>
+                </div>
+            </div>
+            <div class="users p-8 flex items-center gap-4 border-b-4 bg-white border-[#1DD100] rounded-3xl">
+                <div>
+                    <img src="images/ticket-cupon.png" alt="">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-extrabold">1.7 Million</h2>
+                    <p>Tickets sold</p>
+                </div>
+            </div>
+            <div class="users p-8 flex items-center gap-4 border-b-4 bg-white border-[#1DD100] rounded-3xl">
+                <div>
+                    <img src="images/stoppage.png" alt="">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-extrabold">80K+</h2>
+                    <p>Rental partners</p>
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
 
 </html>
