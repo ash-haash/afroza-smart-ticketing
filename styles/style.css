@@ -10,6 +10,15 @@
     font-style: normal;
 }
 
+/* custom border */
+.border-custom {
+    border-image-source: url('images/cupon-devider.png');
+    border-image-slice: fill;
+    /* Stretch the entire image */
+    border-image-repeat: none;
+    /* Repeat the image if needed */
+}
+
 .button-one {
     padding: 12px 30px;
     border: 1px solid #1DD100;

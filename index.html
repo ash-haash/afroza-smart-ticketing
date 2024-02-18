@@ -14,8 +14,8 @@
 </head>
 
 <body class="font-raleway w-full justify-center ">
-    <header class="px-24">
-        <div class="header relative flex flex-col justify-center">
+    <header class="px-24 relative">
+        <div class="header  flex flex-col justify-center">
             <nav class="flex justify-between items-center py-10">
                 <h2 class="text-3xl font-bold">Afroza Express</h2>
                 <div>
@@ -35,7 +35,7 @@
                 <button class="button-two text-black">Buy Tickets</button>
             </div>
         </div>
-        <div class="header-drop mt-[-60px] absolute flex justify-center items-center gap-8">
+        <div class="header-drop mt-[-60px] flex justify-center items-center gap-8">
             <div class="users p-8 flex items-center gap-4 border-b-4 bg-white border-[#1DD100] rounded-3xl">
                 <div>
                     <img src="images/people.png" alt="">
@@ -65,6 +65,84 @@
             </div>
         </div>
     </header>
+    <main>
+        <section class="coupon-section my-24 px-24">
+            <h2 class="text-black my-16 text-center text-4xl font-bold">Best offers for you</h2>
+            <div class="coupons flex justify-around">
+                <div class="new15 flex">
+                    <div class="coupon-details flex flex-col justify-center rounded-l-3xl p-16 bg-[#FFBF0F]">
+                        <h2 class="text-4xl font-extrabold">15% OFF</h2>
+                        <p class="font-bold text-lg">on your next purchase</p>
+                        <p>use by January 2024</p>
+                    </div>
+                    <img class="bg-[#FFBF0F]" src="images/cupon-devider.png" alt="">
+                    <div class="coupon-code flex flex-col justify-center rounded-r-3xl p-16 bg-[#FFBF0F]">
+                        <h2 class="text-3xl font-bold">NEW15</h2>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+                <div class="new15 flex">
+                    <div class="coupon-details flex flex-col justify-center rounded-l-3xl p-16 bg-[#F78C9C]">
+                        <h2 class="text-4xl font-extrabold">20% OFF</h2>
+                        <p class="font-bold text-lg">on your next purchase</p>
+                        <p>use by January 2024</p>
+                    </div>
+                    <img class="bg-[#F78C9C]" src="images/cupon-devider.png" alt="">
+                    <div class="coupon-code flex flex-col justify-center rounded-r-3xl p-16 bg-[#F78C9C]">
+                        <h2 class="text-3xl font-bold">COUPLE20</h2>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-20">
+                <button class="button-one bg-white">See All Offers</button>
+            </div>
+        </section>
+        <section class="booking-area border-t-4 border-[#1DD100] rounded-t-[120px] p-24 bg-[#F7F8F8]">
+            <div class="">
+                <h1 class="my-8 text-center text-4xl font-bold">Afroza Express</h1>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vel sint quasi eos,
+                    quos sed vitae
+                    aperiam
+                    dolorem dicta atque excepturi odio iusto beatae asperiores. Deleniti numquam laborum sapiente porro.
+                </p>
+            </div>
+            <div class="route-details mt-16 mb-8 flex justify-between bg-white rounded-3xl">
+                <div class="bus-info flex flex-col justify-center pl-20 gap-6">
+                    <div class="info-top flex justify-between">
+                        <div class="info-title flex gap-4">
+                            <img src="images/bus-logo.png" alt="">
+                            <div>
+                                <h1 class="text-3xl font-bold">Afroza Express</h1>
+                                <p>Coach-009-WEB ! AC_Business</p>
+                            </div>
+                        </div>
+                        <button class="button-one flex gap-2 border-none"><img src="/images/seat-green.png" alt="">
+                            <span id="remaining-seat"> 40</span>
+                            Seats
+                            left</button>
+                    </div>
+                    <div class="info-field mt-4 rounded-3xl p-6 bg-[#F7F8F8]">
+                        <input class="bg-[#F7F8F8] py-4 border-b-2 border-dashed" placeholder="Route" type="text">
+                        <br>
+                        <input class="bg-[#F7F8F8] py-4 border-b-2 border-dashed" placeholder="Departure Time"
+                            type="text">
+                        <div class="points pt-4 flex gap-10">
+                            <p class="bg-slate-200 p-4  text-lg rounded-2xl font-semibold">Boarding Point - Laxmipur</p>
+                            <p class="bg-slate-200 p-4 text-lg rounded-2xl font-semibold">Dropping Point - Bogura</p>
+                            <p class="bg-slate-200 p-4 text-lg rounded-2xl font-semibold">Est. Time - 11 Hour</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/info-devider.png" class="h-full" alt="">
+                <div class="ticket-price-per mr-24 flex flex-col justify-center items-center gap-4">
+                    <img src="images/fare.png" alt="">
+                    <h2 class="text-4xl font-extrabold">550 Taka</h2>
+                    <p class="font-bold text-lg">Per Seat</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
