@@ -227,7 +227,52 @@
                     </div>
                 </div>
                 <div class="selected-area w-[40%] px-8">
-                    <h2>Select Your Seat</h2>
+                    <h2 class="font-semibold text-xl py-5 border-b-2 border-dashed">Select Your Seat</h2>
+                    <div class="selected-seat-area bg-[#F7F8F8] my-8 p-8 rounded-xl">
+                        <div>
+                            <table class="w-full border-b border-gray-300">
+                                <thead class="text-xl border-b border-dashed">
+                                    <tr>
+                                        <th class="w-[33%] text-left px-4 py-2">Seat</th>
+                                        <th class="w-[33%] px-4 py-2">Class</th>
+                                        <th class="w-[33%] text-right px-4 py-2">Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr">
+                                        <td class="px-4 py-2">Seat 1</td>
+                                        <td class="px-4 py-2">Economy</td>
+                                        <td class="text-right px-4 py-2">$100</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-4 py-2">Seat 2</td>
+                                            <td class="px-4 py-2">Business</td>
+                                            <td class="text-right px-4 py-2">$80</td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                            <table class="w-full text-lg font-semibold">
+                                <tr>
+                                    <td class="text-lg p-3">Total Price</td>
+                                    <td class="text-right p-3">BDT<span id="total-price"> 1150</span></td>
+                                </tr>
+                            </table>
+                            <form class="w-full bg-white flex justify-between p-4 rounded-lg">
+                                <input class="w-[200px]" placeholder="Have any coupon?" type="text" id="coupon"
+                                    name="coupon">
+                                <button class="text-white w-20 h-10 rounded-md font-semibold bg-[#1DD100]"
+                                    type="submit">Apply</button>
+                            </form>
+                            </tr>
+                            <table class="w-full text-lg font-semibold">
+                                <tr>
+                                    <td class="text-lg p-3">Grand Price</td>
+                                    <td class="text-right p-3">BDT<span id="total-price"> 1150</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
