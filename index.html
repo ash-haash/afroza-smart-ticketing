@@ -233,8 +233,8 @@
                             <table class="w-full border-b border-gray-300">
                                 <thead class="text-xl border-b border-dashed">
                                     <tr>
-                                        <th class="w-[33%] text-left px-4 py-2">Seat<sup id="number-of-selected-seat"
-                                                class="text-white p-1 rounded-xl font-medium leading-loose"></sup></th>
+                                        <th class="w-[33%] text-left px-4 py-2">Seat <sup id="number-of-selected-seat"
+                                                class="text-white p-1 rounded-md font-medium leading-loose"></sup></th>
                                         <th class="w-[33%] px-4 py-2">Class</th>
                                         <th class="w-[33%] text-right px-4 py-2">Price</th>
                                     </tr>
@@ -276,11 +276,11 @@
                     </div>
                     <div class="passenger-info max-w-md mx-auto mt-8">
                         <h2 class="text-xl font-semibold mb-4">Passenger Information</h2>
-                        <form action="#" method="POST" class="space-y-4">
+                        <form class="space-y-4">
                             <div>
                                 <label for="passenger_name" class="block font-medium text-gray-700">Passenger
                                     Name*</label>
-                                <input type="text" id="passenger_name" name="passenger_name" required
+                                <input type="text" id="passenger_name" name="passenger_name"
                                     placeholder="Enter your name"
                                     class="mt-2 p-4 block w-full rounded-xl border border-gray-200 ">
                             </div>
@@ -292,11 +292,11 @@
                             </div>
                             <div>
                                 <label for="email" class="block font-medium text-gray-700">Email ID*</label>
-                                <input type="email" id="email" name="email" required placeholder="Enter email address"
+                                <input type="email" id="email" name="email" placeholder="Enter email address"
                                     class="mt-2 p-4 block w-full rounded-xl border border-gray-200 ">
                             </div>
                             <div>
-                                <button id="next" type="submit" disabled
+                                <button id="next" disabled
                                     class="w-full text-2xl font-semibold bg-[#1DD100] py-2 px-4 border border-none opacity-50 cursor-not-allowed rounded-xl shadow-sm text-white">Next</button>
                             </div>
                             <div class="flex justify-between m-6 underline text-gray-500">
@@ -305,6 +305,9 @@
                             </div>
                         </form>
                     </div>
+
+
+
                 </div>
             </div>
         </section>
@@ -330,68 +333,26 @@
         </div>
     </footer>
 
+
+
+
+    <!-- Open the modal using ID.showModal() method -->
+    <dialog id="my_modal_2" class="modal">
+        <div class="modal-box">
+            <h3 class="font-bold text-lg">Hello!</h3>
+            <p class="py-4">Press ESC key or click outside to close</p>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+        </form>
+    </dialog>
+
+
+
+
+
     <script src="scripts/afroza-express.js"></script>
     <script src="scripts/utility.js"></script>
 </body>
 
 </html>
-
-
-
-
-
-
-<!-- <tr>
-    <th class="w-[33%] text-left px-4 py-2">Seat<span id="number-of-selected-seat"> 0</span></th>
-    <th class="w-[33%] px-4 py-2">Class</th>
-    <th class="w-[33%] text-right px-4 py-2">Price</th>
-</tr> -->
-
-
-
-<!-- <div class="seats flex gap-16">
-    <div class="seats-left grid grid-cols-2 gap-8">
-        <button id="A1" class="seat">A1</button>
-        <button id="A2" class="seat">A2</button>
-        <button id="B1" class="seat">B1</button>
-        <button id="B2" class="seat">B2</button>
-        <button id="C1" class="seat">C1</button>
-        <button id="C2" class="seat">C2</button>
-        <button id="D1" class="seat">D1</button>
-        <button id="D2" class="seat">D2</button>
-        <button id="E1" class="seat">E1</button>
-        <button id="E2" class="seat">E2</button>
-        <button id="F1" class="seat">F1</button>
-        <button id="F2" class="seat">F2</button>
-        <button id="G1" class="seat">G1</button>
-        <button id="G2" class="seat">G2</button>
-        <button id="H1" class="seat">H1</button>
-        <button id="H2" class="seat">H2</button>
-        <button id="I1" class="seat">I1</button>
-        <button id="I2" class="seat">I2</button>
-        <button id="J1" class="seat">J1</button>
-        <button id="J2" class="seat">J2</button>
-    </div>
-    <div class="seats-right grid grid-cols-2 gap-8">
-        <button id="A3" class="seat">A3</button>
-        <button id="A4" class="seat">A4</button>
-        <button id="B3" class="seat">B3</button>
-        <button id="B4" class="seat">B4</button>
-        <button id="C3" class="seat">C3</button>
-        <button id="C4" class="seat">C4</button>
-        <button id="D3" class="seat">D3</button>
-        <button id="D4" class="seat">D4</button>
-        <button id="E3" class="seat">E3</button>
-        <button id="E4" class="seat">E4</button>
-        <button id="F3" class="seat">F3</button>
-        <button id="F4" class="seat">F4</button>
-        <button id="G3" class="seat">G3</button>
-        <button id="G4" class="seat">G4</button>
-        <button id="H3" class="seat">H3</button>
-        <button id="H4" class="seat">H4</button>
-        <button id="I3" class="seat">I3</button>
-        <button id="I4" class="seat">I4</button>
-        <button id="J3" class="seat">J3</button>
-        <button id="J4" class="seat">J4</button>
-    </div>
-</div> -->

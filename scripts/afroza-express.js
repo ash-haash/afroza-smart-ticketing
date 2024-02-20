@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let selectedSeats = 0;
 
     const tableBody = document.querySelector(".table-body");
+    const phoneNumberInput = document.getElementById("phone_number");
+    const nextButton = document.getElementById("next");
 
     function seatClickHandler() {
         if (this.classList.contains('selected', 'bg-[#1DD100]', 'text-white')) {
@@ -74,6 +76,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const totalPriceElement = document.getElementById('total-price');
         let totalPrice = selectedSeats * 550;
         totalPriceElement.innerText = parseInt(totalPrice);
+
+
+        toggleNextButton();
     }
 
     seats.forEach(seat => {
@@ -127,4 +132,34 @@ document.addEventListener("DOMContentLoaded", function () {
         const enteredCoupon = couponInput.value.trim();
         applyCoupon(enteredCoupon);
     });
+
+
+
+    function validatePhoneNumber(phoneNumber) {
+        const phoneNumberRegex = /^\d{10}$/;
+        return phoneNumberRegex.test(phoneNumber);
+    }
+
+
+    function toggleNextButton() {
+        const phoneNumber = phoneNumberInput.value.trim();
+        if (validatePhoneNumber(phoneNumber) && selectedSeats > 0) {
+            nextButton.removeAttribute("disabled");
+            nextButton.classList.remove('opacity-50', 'cursor-not-allowed');
+        } else {
+            nextButton.setAttribute("disabled", "disabled");
+            nextButton.classList.add('opacity-50', 'cursor-not-allowed');
+        }
+    }
+
+    phoneNumberInput.addEventListener("input", toggleNextButton);
+
+    function nextButtonClickHandler() {
+        event.preventDefault();
+        const modal = document.getElementById("my_modal_2");
+        modal.showModal();
+    }
+
+    nextButton.addEventListener("click", nextButtonClickHandler);
 });
+
