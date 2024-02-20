@@ -234,13 +234,13 @@
                                 <thead class="text-xl border-b border-dashed">
                                     <tr>
                                         <th class="w-[33%] text-left px-4 py-2">Seat<sup id="number-of-selected-seat"
-                                                class="text-white bg-[#1DD100] font-medium leading-loose"></sup></th>
+                                                class="text-white p-1 rounded-xl font-medium leading-loose"></sup></th>
                                         <th class="w-[33%] px-4 py-2">Class</th>
                                         <th class="w-[33%] text-right px-4 py-2">Price</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr">
+                                <tbody class="table-body">
+                                    <!-- <tr">
                                         <td class="px-4 py-2">Seat 1</td>
                                         <td class="px-4 py-2">Economy</td>
                                         <td class="text-right px-4 py-2">$100</td>
@@ -249,26 +249,27 @@
                                             <td class="px-4 py-2">Seat 2</td>
                                             <td class="px-4 py-2">Business</td>
                                             <td class="text-right px-4 py-2">$80</td>
-                                        </tr>
+                                        </tr> -->
                                 </tbody>
                             </table>
                             <table class="w-full text-lg font-semibold">
-                                <tr>
+                                <tr id="total-price-row" class="hidden">
                                     <td class="text-lg p-3">Total Price</td>
-                                    <td class="text-right p-3">BDT<span id="total-price"> 1150</span></td>
+                                    <td class="text-right p-3">BDT <span id="total-price"> </span></td>
                                 </tr>
                             </table>
-                            <form class="w-full bg-white flex justify-between p-4 rounded-lg">
-                                <input class="w-[200px]" placeholder="Have any coupon?" type="text" id="coupon"
+                            <form class="w-full bg-white flex justify-between p-4 mt-8 rounded-lg">
+                                <input class="w-[200px]" placeholder="Have any coupon?" type="text" id="coupon-input"
                                     name="coupon">
-                                <button class="text-white w-20 h-10 rounded-md font-semibold bg-[#1DD100]"
+                                <button id="coupon-apply"
+                                    class="text-white w-20 h-10 rounded-md font-semibold bg-[#1DD100]"
                                     type="submit">Apply</button>
                             </form>
                             </tr>
                             <table class="w-full text-lg font-semibold">
-                                <tr>
-                                    <td class="text-lg p-3">Grand Price</td>
-                                    <td class="text-right p-3">BDT<span id="total-price"> 1150</span></td>
+                                <tr id="grand-total-row" class="hidden">
+                                    <td class="text-lg p-3">Grand Total</td>
+                                    <td class="text-right p-3">BDT<span id="grand-total"> </span></td>
                                 </tr>
                             </table>
                         </div>
