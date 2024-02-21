@@ -16,10 +16,12 @@
 </head>
 
 <body class="font-raleway w-full justify-center ">
+    <!-- header section -->
     <header class="px-24 relative">
         <div class="header  flex flex-col justify-center">
+            <!-- Nav -->
             <nav class="flex justify-between items-center py-10">
-                <h2 class="text-3xl font-bold">Afroza Express</h2>
+                <h2 class="text-4xl font-bold">Afroza Express</h2>
                 <div>
                     <ul class="flex justify-between gap-12 text-xl">
                         <li>Home</li>
@@ -30,13 +32,15 @@
                 </div>
                 <Button class="button-one flex gap-2 items-center">Bus<img src="images/bus-icon.png" alt=""></Button>
             </nav>
+            <!-- banner div content -->
             <div class="banner-bg flex flex-col justify-center items-center py-40 gap-8 rounded-[34px] text-white">
                 <h1 class="text-6xl text-white font-bold">End-to-End Travel With</h1>
                 <h1 class="text-7xl  text-[#1DD100] font-extrabold">Afroza Express</h1>
                 <p>Book coach travel to 100's of UK towns, cities and airports with Afroza Express coaches.</p>
-                <button class="button-two text-black">Buy Tickets</button>
+                <a href="#booking-interface"><button class="button-two text-black">Buy Tickets</button></a>
             </div>
         </div>
+        <!-- header drop div -->
         <div class="header-drop mt-[-60px] flex justify-center items-center gap-8">
             <div class="users p-8 flex items-center gap-4 border-b-4 bg-white border-[#1DD100] rounded-3xl">
                 <div>
@@ -68,6 +72,7 @@
         </div>
     </header>
     <main>
+        <!-- coupon section -->
         <section class="coupon-section my-24 px-24">
             <h2 class="text-black my-16 text-center text-4xl font-bold">Best offers for you</h2>
             <div class="coupons flex justify-around">
@@ -100,15 +105,20 @@
                 <button class="button-one bg-white">See All Offers</button>
             </div>
         </section>
-        <section class="booking-area border-t-4 border-[#1DD100] rounded-t-[120px] p-24 bg-[#F7F8F8]">
+        <!-- booking area start -->
+        <section id="booking-interface"
+            class="booking-area border-t-4 border-[#1DD100] rounded-t-[120px] p-24 bg-[#F7F8F8]">
             <div class="">
                 <h1 class="my-8 text-center text-4xl font-bold">Afroza Express</h1>
-                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vel sint quasi eos,
-                    quos sed vitae
-                    aperiam
-                    dolorem dicta atque excepturi odio iusto beatae asperiores. Deleniti numquam laborum sapiente porro.
+                <p class="text-center text-lg px-24">Afroza Express Transport Solutions are one of the leaders in
+                    providing
+                    fully
+                    managed ground transport solutions. Working with some of the biggest names across a number of
+                    industries, we offer an end to end solution from a single airport transfer to group transport for
+                    over 1000+ of passengers from all over the Country.
                 </p>
             </div>
+            <!-- route section -->
             <div class="route-details mt-16 mb-8 flex justify-between bg-white rounded-3xl">
                 <div class="bus-info flex flex-col justify-center pl-20 gap-6">
                     <div class="info-top flex justify-between">
@@ -148,6 +158,7 @@
             </div>
             <!-- ticket booking section -->
             <div class="ticket-booking-interface bg-white rounded-3xl p-12 flex justify-between">
+                <!-- seat selection side -->
                 <div class="seats-area w-[60%] border-r-4 border-dashed pr-8">
                     <div class="seats-head p-6">
                         <h2 class="font-semibold text-xl pb-4 border-b-2 border-dashed">Select Your Seat</h2>
@@ -226,30 +237,24 @@
                         </div>
                     </div>
                 </div>
+                <!-- selection details display side -->
                 <div class="selected-area w-[40%] px-8">
                     <h2 class="font-semibold text-xl py-5 border-b-2 border-dashed">Select Your Seat</h2>
+                    <!-- table to display selected seats and price -->
                     <div class="selected-seat-area bg-[#F7F8F8] my-8 p-8 rounded-xl">
                         <div>
                             <table class="w-full border-b border-gray-300">
                                 <thead class="text-xl border-b border-dashed">
                                     <tr>
                                         <th class="w-[33%] text-left px-4 py-2">Seat <sup id="number-of-selected-seat"
-                                                class="text-white p-1 rounded-md font-medium leading-loose"></sup></th>
+                                                class="text-white px-1 rounded-md font-medium text-sm leading-loose"></sup>
+                                        </th>
                                         <th class="w-[33%] px-4 py-2">Class</th>
                                         <th class="w-[33%] text-right px-4 py-2">Price</th>
                                     </tr>
                                 </thead>
                                 <tbody class="table-body">
-                                    <!-- <tr">
-                                        <td class="px-4 py-2">Seat 1</td>
-                                        <td class="px-4 py-2">Economy</td>
-                                        <td class="text-right px-4 py-2">$100</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="px-4 py-2">Seat 2</td>
-                                            <td class="px-4 py-2">Business</td>
-                                            <td class="text-right px-4 py-2">$80</td>
-                                        </tr> -->
+
                                 </tbody>
                             </table>
                             <table class="w-full text-lg font-semibold">
@@ -258,7 +263,8 @@
                                     <td class="text-right p-3">BDT <span id="total-price"> </span></td>
                                 </tr>
                             </table>
-                            <form class="w-full bg-white flex justify-between p-4 mt-8 rounded-lg">
+                            <!-- coupon form -->
+                            <form id="coupon-form" class="w-full bg-white flex justify-between p-4 mt-8 rounded-lg">
                                 <input class="w-[200px]" placeholder="Have any coupon?" type="text" id="coupon-input"
                                     name="coupon">
                                 <button id="coupon-apply"
@@ -274,6 +280,7 @@
                             </table>
                         </div>
                     </div>
+                    <!-- passenger info form -->
                     <div class="passenger-info max-w-md mx-auto mt-8">
                         <h2 class="text-xl font-semibold mb-4">Passenger Information</h2>
                         <form class="space-y-4">
@@ -311,7 +318,28 @@
                 </div>
             </div>
         </section>
+
+        <!-- modal which is gonna open only if a user selects minimum 1 seat and provides a valid number (10 digit number) -->
+        <dialog id="my_modal_2" class="modal rounded-xl p-20">
+            <div class="modal-box text-green-600 flex flex-col justify-center items-center">
+                <i class="fa-regular fa-circle-check font-bold text-5xl"></i>
+                <h2 class="py-4 uppercase font-extrabold text-center">Success</h2>
+                <h2 class="py-2 font-semibold text-black text-lg text-center">Thank you for Traveling with us!<br>We are
+                    working
+                    hard to
+                    find the
+                    best service and deals for you.</h2>
+                <p class=" py-1 text-gray-600">Shortly you will find a confirmation in your email.</p>
+                <button class="text-white font-bold bg-green-600 rounded-2xl py-2 px-5">Continue</button>
+            </div>
+            <form method="dialog" class="modal-backdrop">
+                <button>close</button>
+            </form>
+        </dialog>
+
+
     </main>
+    <!-- footer section -->
     <footer class="p-24 text-white bg-[#1E1E1E]">
         <div class="flex justify-between pb-16 border-b-2 border-dashed">
             <div class="left">
@@ -332,21 +360,6 @@
             </div>
         </div>
     </footer>
-
-
-
-
-    <!-- Open the modal using ID.showModal() method -->
-    <dialog id="my_modal_2" class="modal">
-        <div class="modal-box">
-            <h3 class="font-bold text-lg">Hello!</h3>
-            <p class="py-4">Press ESC key or click outside to close</p>
-        </div>
-        <form method="dialog" class="modal-backdrop">
-            <button>close</button>
-        </form>
-    </dialog>
-
 
 
 
